@@ -14,6 +14,7 @@
   --primary-lighter: rgba(0, 150, 136, 0.08);
   --text-color: #333;
   --bg-color: #fdfdfd;
+  --white: white;
 }
 
 html {
@@ -51,11 +52,12 @@ p {
 
 .header-sec .logo,
 .header-sec .header-menu-sec ul li a {
-  color: white;
+  color: var(--white);
 }
 
 .header-sec .logo {
   font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .header-sec .header-menu-sec ul li a {
@@ -124,5 +126,102 @@ p {
 
   .header-menu-sec ul li a {
     font-size: 12px;
+  }
+}
+
+/* Hero Section */
+
+.hero-sec .hero-container {
+  background-color: var(--primary-light);
+  height: auto;
+  border-radius: 20px;
+  color: var(--text-color);
+}
+
+.hero-img-sec {
+  width: 80%;
+}
+
+.greeting {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.hero-main-heading {
+  font-size: 40px;
+}
+
+.hero-line {
+  font-size: 20px;
+}
+
+.hero-btn-sec {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  color: white;
+}
+
+.hero-btn-sec a {
+  color: var(--white);
+}
+
+.hero-btn-sec:hover {
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--primary);
+}
+
+.hero-btn-sec:hover a,
+.hero-btn-sec:hover a i {
+  color: var(--primary) !important;
+}
+
+@media screen and (max-width: 840px) {
+  .hero-sec .hero-container {
+    display: block !important;
+  }
+
+  .hero-container .hero-left-sec,
+  .hero-container .hero-right-sec {
+    width: 100% !important;
+  }
+
+  .hero-container .hero-right-sec {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body .hero-sec {
+    padding: 0 8px !important;
+  }
+
+  .hero-sec .hero-container {
+    padding: 25px 0 !important;
+  }
+
+  .hero-right-sec {
+    margin-top: 45px !important;
+  }
+
+  .hero-right-sec .greeting,
+  .hero-right-sec .hero-line {
+    font-size: 14px;
+  }
+
+  .hero-right-sec .hero-main-heading {
+    font-size: 22px;
+  }
+
+  .hero-right-sec .hero-btn-sec {
+    border: 1px solid var(--primary);
+    padding: 3px 6px !important;
+    border-radius: 5px;
+  }
+
+  .hero-btn-sec a {
+    font-size: 8px;
   }
 }
