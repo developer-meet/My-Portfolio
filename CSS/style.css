@@ -30,3 +30,99 @@ body {
 .max-width-1280px {
   max-width: 1280px;
 }
+
+a {
+  text-decoration: none !important;
+}
+
+ul,
+li,
+a,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*  Header Section  */
+
+.header-sec {
+  background-color: var(--primary);
+}
+
+.header-sec .logo,
+.header-sec .header-menu-sec ul li a {
+  color: white;
+}
+
+.header-sec .logo {
+  font-size: 1.7rem;
+}
+
+.header-sec .header-menu-sec ul li a {
+  font-weight: 500;
+}
+
+.header-sec .header-menu-sec ul li {
+  border-radius: 5px;
+}
+
+.header-sec .header-menu-sec ul li:hover a {
+  color: var(--primary);
+  transition: all 0.2s ease;
+}
+
+.header-sec .header-menu-sec ul li:hover {
+  background-color: var(--bg-color);
+}
+
+.main-box .menu-x-icon,
+.main-box .menu-icon {
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .header-sec {
+    position: relative;
+  }
+
+  .main-box .header-menu-sec {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .header-menu-sec ul {
+    width: 100% !important;
+    flex-direction: column !important;
+    background-color: var(--primary);
+    padding: 0 0 10px 0px !important;
+  }
+
+  .header-menu-sec ul li {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 0 0 16px !important;
+    border-radius: 0px !important;
+  }
+
+  .main-box #menuList {
+    transition: all 0.5s !important;
+  }
+
+  .main-box .menu-icon {
+    display: block;
+  }
+
+  .main-box .logo {
+    font-size: 1rem;
+  }
+
+  .header-menu-sec ul li a {
+    font-size: 12px;
+  }
+}
