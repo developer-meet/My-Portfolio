@@ -194,10 +194,6 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-  .body .hero-sec {
-    padding: 0 8px !important;
-  }
-
   .hero-sec .hero-container {
     padding: 25px 0 !important;
   }
@@ -223,5 +219,93 @@ p {
 
   .hero-btn-sec a {
     font-size: 8px;
+  }
+}
+
+/* About Me Section */
+
+.about-sec {
+  height: auto;
+  background-color: var(--primary-light);
+  border-radius: 20px;
+}
+
+.about-sec .about-left-sec,
+.about-sec .about-right-sec {
+  width: 50%;
+  color: var(--text-color);
+}
+
+.about-heading {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.about-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  opacity: 0.6;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-right-sec .about-img-sec img {
+  border-radius: 20px;
+  filter: drop-shadow(4px 4px 5px gray);
+}
+
+@media screen and (max-width: 840px) {
+  main .about-container-sec {
+    display: block !important;
+  }
+
+  .about-container-sec .about-left-sec,
+  .about-container-sec .about-right-sec {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .about-container-sec .about-right-sec {
+    justify-content: start !important;
+    margin-top: 50px;
+  }
+
+  .about-sec .about-heading {
+    text-align: left !important;
+    display: inline-block;
+    margin-bottom: 40px !important;
+  }
+
+  .about-left-sec .about-para {
+    padding-right: 0 !important;
+  }
+
+  .my-details {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .about-sec {
+    padding: 25px 16px !important;
+  }
+
+  .about-sec .about-heading {
+    font-size: 20px;
+  }
+
+  .about-left-sec .about-para,
+  .my-details div {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about-img-sec img {
+    width: 100% !important;
   }
 }
