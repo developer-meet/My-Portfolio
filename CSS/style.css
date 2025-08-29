@@ -481,3 +481,20 @@ p {
     padding: 10px;
   }
 }
+
+/* Footer Section */
+
+.footer-sec {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media screen and (max-width: 576px) {
+  .body .footer-sec {
+    padding: 10px 0 !important;
+  }
+
+  .footer-main-line {
+    font-size: 14px;
+  }
+}
