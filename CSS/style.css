@@ -475,10 +475,15 @@ p {
   }
 
   .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
+  .contact-form textarea {
     font-size: 14px;
     padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 12px;
+    width: 110px;
+    padding: 5px 10px;
   }
 }
 
